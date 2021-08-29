@@ -8,6 +8,9 @@ module.exports = {
 				primary: '#FFBE00',
 				dark: '#262626',
 				darkPink: '#C62368',
+				yt: {
+					500: '#f00',
+				},
 			},
 			zIndex: {
 				'-1': '-1',

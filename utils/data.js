@@ -92,12 +92,6 @@ module.exports = {
 				'All projects are naturally submitted for this. May the the best hack win!',
 			image: '',
 		},
-		{
-			name: 'Best Web Monetization (Coil) ',
-			description:
-				'This amazing track is sponsored by Coil! Be sure to opt-in.',
-			image: '',
-		},
 	],
 	leaders: [{ name: '', pronouns: '' }],
 	sponsors: [

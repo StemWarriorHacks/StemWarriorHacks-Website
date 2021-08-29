@@ -15,7 +15,7 @@ const Blobs = () => {
 	const isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
 
 	const setup = (p5, canvasParentRef) => {
-		p5.createCanvas(window.innerWidth, window.innerHeight * 1.5).parent(
+		p5.createCanvas(window.innerWidth, window.innerHeight * 2).parent(
 			canvasParentRef
 		)
 		p5.noStroke()
@@ -27,7 +27,7 @@ const Blobs = () => {
 		if (polygons.length < numAutoPolys) {
 			createPolyAt(
 				MathUtils.random(0, window.innerWidth),
-				MathUtils.random(0, window.innerHeight * 1.5)
+				MathUtils.random(0, window.innerHeight * 2)
 			)
 		}
 
@@ -47,7 +47,7 @@ const Blobs = () => {
 	}
 
 	const windowResized = (p5) => {
-		p5.resizeCanvas(window.innerWidth, window.innerHeight * 1.5)
+		p5.resizeCanvas(window.innerWidth, window.innerHeight * 2)
 	}
 
 	const createPolyAt = (x, y) => {

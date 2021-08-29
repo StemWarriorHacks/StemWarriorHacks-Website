@@ -3,7 +3,7 @@ const About = () => {
 		boxShadow: 'inset 0 -.400em 0 0 rgba(255,190,0, 0.4)',
 	}
 	return (
-		<div className='card select-none overflow-x-hidden h-3/4 md:shadow-lg md:rounded-lg flex flex-col justify-center items-center mb-10 px-8 py-10'>
+		<div className='glass overflow-x-hidden h-3/4 flex flex-col justify-center items-center md:border-2 md:border-gray-200 md:rounded-lg md:shadow-sm mb-10 px-8 py-10'>
 			<p className='text-4xl font-bold my-6' style={textUnder}>
 				Our Mission
 			</p>

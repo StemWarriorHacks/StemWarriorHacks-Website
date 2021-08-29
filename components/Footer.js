@@ -9,9 +9,9 @@ import {
 import Link from 'next/link'
 import { urls } from '../utils/data'
 
-const Service = ({ href, label, color, children }) => (
+const Service = ({ href, label, children }) => (
 	<Link href={href} aria-label={label}>
-		<a target='_blank' className={`text-2xl hover:text-${color}-500`}>
+		<a target='_blank' className={'text-2xl'}>
 			{children}
 		</a>
 	</Link>
@@ -19,7 +19,7 @@ const Service = ({ href, label, color, children }) => (
 
 const Footer = ({ children }) => (
 	<>
-		<svg viewBox='0 0 120 28'>
+		<svg viewBox='0 0 120 28' width='100vw' className='overflow-x-hidden'>
 			<defs>
 				<filter id='goo'>
 					<feGaussianBlur in='SourceGraphic' stdDeviation='1' result='blur' />
@@ -50,33 +50,35 @@ const Footer = ({ children }) => (
 			className='footer m-0 flex flex-col justify-center items-center bg-dark text-white'>
 			{children}
 			<p
-				className='text-3xl min-w-1/3 font-bold pt-4 mb-2'
+				className='text-4xl font-bold my-6 z-10'
 				style={{
 					boxShadow: 'inset 0 -.400em 0 0 rgba(255,190,0, 0.4)',
 				}}>
 				Contact us
 			</p>
-			<a className='email hover:text-yellow-500 text-lg' href={urls.email}>
+			<a
+				className='email hover:text-yellow-500 text-lg  z-10'
+				href={urls.email}>
 				contact@stemwarriorhacks.org
 			</a>
-			<div className='services flex py-6 w-9/12 sm:w-1/3 justify-around'>
-				<Service href={urls.discord} label='discord' color='purple'>
-					<FaDiscord />
+			<div className='services flex py-6 w-9/12 sm:w-1/3 justify-around  z-10'>
+				<Service href={urls.discord} label='discord'>
+					<FaDiscord className='hover:text-purple-500' />
 				</Service>
-				<Service href={urls.instagram} color='pink' label='instagram'>
-					<FaInstagram />
+				<Service href={urls.instagram} label='instagram'>
+					<FaInstagram className='hover:text-pink-500' />
 				</Service>
-				<Service href={urls.github} color='gray' label='github'>
-					<FaGithub />
+				<Service href={urls.github} label='github'>
+					<FaGithub className='hover:text-gray-500' />
 				</Service>
-				<Service href={urls.twitter} color='blue' label='twitter'>
-					<FaTwitter />
+				<Service href={urls.twitter} label='twitter'>
+					<FaTwitter className='hover:text-blue-500' />
 				</Service>
-				<Service href={urls.youtube} color='red' label='youtube'>
-					<FaYoutube />
+				<Service href={urls.youtube} label='youtube'>
+					<FaYoutube className='hover:text-red-500' />
 				</Service>
 			</div>
-			<p className='text-sm py-3 text-gray-400'>
+			<p className='text-sm py-3 text-gray-400  z-10'>
 				Copyright © 2021 StemWarriorHacks. All rights reserved.
 			</p>
 		</div>
