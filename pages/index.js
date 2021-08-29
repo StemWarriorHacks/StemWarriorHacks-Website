@@ -1,68 +1,30 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import dynamic from 'next/dynamic'
+import Link from 'next/link'
+import About from '../components/About'
+import Footer from '../components/Footer'
+import Tracks from '../components/Tracks'
+import { name } from '../utils/data'
 
-export default function Home() {
-	return (
-		<div className={styles.container}>
-			<main className={styles.main}>
-				<h1 className={styles.title}>
-					<span>S</span>tem<span>W</span>arrior <span>Hacks</span>
-				</h1>
+const Blobs = dynamic(import('../utils/Blobs'), { ssr: false })
+const Snow = dynamic(import('../utils/Snow'), { ssr: false })
 
-				<p className={styles.description}>
-					An international non-profit student-led online hackathon.
-					<br />
-					Open your eyes to the depths, diversity, and power of computer
-					science!
-					<br />
-					<code className={styles.code}>November 3rd - 5th, 2021</code>
-				</p>
-
-				<div className={styles.grid}>
-					<a href='https://www.stemwarriorhacks.org' className={styles.card}>
-						<h2>Register &rarr;</h2>
-						<p>
-							Get started in the amazing journey of hackathon along with other
-							warriors.
-						</p>
-					</a>
-
-					<a href='https://discord.gg/zVfstssWhe' className={styles.card}>
-						<h2>Join Discord &rarr;</h2>
-						<p>Head over to place where you can meet other warriors!</p>
-					</a>
-
-					<a
-						href='https://stemwarriorhacks.devpost.com'
-						className={styles.card}>
-						<h2>Join Devpost &rarr;</h2>
-						<p>
-							Join our devpost platform for team creation, project submission,
-							and sign ups.
-						</p>
-					</a>
-
-					<a
-						href='https://stemwarriorhacks.devpost.com/rules'
-						className={styles.card}>
-						<h2>More Information &rarr;</h2>
-						<p>Learn more about the hackathon.</p>
-					</a>
-				</div>
-			</main>
-
-			<footer className={styles.footer}>
-				<a
-					href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-					target='_blank'
-					rel='noopener noreferrer'>
-					Powered by{' '}
-					<span className={styles.logo}>
-						<Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
-					</span>
-				</a>
-			</footer>
+const Home = () => (
+	<div>
+		{/* <div className='absolute bg'></div>
+		<div className='blob print-none absolute max-w-screen -z-1'>
+			<Blobs />
 		</div>
-	)
-}
+		<a href='#about'>about</a>
+		<a href='#footer'>footer</a>
+		<div className='print-none absolute max-w-screen -z-1'>
+			<Snow />
+		</div> */}
+		<div className='max-w-11/12 md:max-w-3xl mx-4 md:mx-auto'>
+			<Tracks />
+			<About />
+		</div>
+		{/* <Footer>{name}</Footer> */}
+	</div>
+)
+
+export default Home

@@ -1,11 +1,13 @@
 import Head from 'next/head'
+import data from '../utils/data'
+import { theme } from '../tailwind.config'
 
 const Meta = ({
-	title = 'StemWarrior Hacks',
-	name = 'StemWarrior Hacks',
-	description = 'An international, student-run, 501(c)(3) non-profit hackathon aiming to inspire young innovators.',
-	image = '',
-	url = 'https://www.stemwarriorhacks.org',
+	title = data.title,
+	name = data.name,
+	description = data.description,
+	image = data.img,
+	url = data.url,
 	children,
 }) => (
 	<Head>
@@ -29,13 +31,21 @@ const Meta = ({
 				<meta key='tw_img' name='twitter:image' content={image} />
 			</>
 		)}
-		<meta key='theme_color' name='theme-color' content={'#ffbe00'} />
-		<meta key='tile_color' name='msapplication-TileColor' content={'#ffbe00'} />
+		<meta
+			key='theme_color'
+			name='theme-color'
+			content={theme.extend.colors.primary}
+		/>
+		<meta
+			key='tile_color'
+			name='msapplication-TileColor'
+			content={theme.extend.colors.primary}
+		/>
 		<link
 			key='safari_icon'
 			rel='mask-icon'
 			href={`${url}/safari-pinned-tab.png`}
-			color={'#ffbe00'}
+			color={theme.extend.colors.primary}
 		/>
 		<link
 			key='apple_icon'

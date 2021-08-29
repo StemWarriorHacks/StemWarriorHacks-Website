@@ -1,5 +1,6 @@
 import Meta from '../components/Meta'
-import '../styles/globals.scss'
+import 'tailwindcss/tailwind.css'
+import '../utils/styles.css'
 
 const MyApp = ({ Component, pageProps }) => (
 	<>

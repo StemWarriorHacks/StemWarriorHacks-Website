@@ -1,0 +1,51 @@
+body {
+	overflow-x: hidden;
+}
+
+.bg {
+	width: 100vw;
+	height: 200vh;
+	background-color: #262626;
+	z-index: -1000;
+}
+
+.card {
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 12px;
+	border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+svg {
+	width: 100%;
+	aspect-ratio: 120/28;
+	overflow: visible;
+}
+.wave {
+	animation: wave 3s linear;
+	animation-iteration-count: infinite;
+}
+#wave1 {
+	fill: #262626;
+}
+#wave2 {
+	animation-duration: 3s;
+	animation-direction: reverse;
+	fill: #6a542a;
+}
+#wave3 {
+	animation-duration: 5s;
+	fill: #b28725;
+}
+#wave4 {
+	animation-duration: 7s;
+	animation-direction: reverse;
+	fill: #ffbe00;
+}
+
+@keyframes wave {
+	to {
+		transform: translateX(-100%);
+	}
+}
