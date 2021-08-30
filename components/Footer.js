@@ -19,7 +19,7 @@ const Service = ({ href, label, children }) => (
 
 const Footer = ({ children }) => (
 	<>
-		<svg viewBox='0 0 120 28' width='100vw' className='overflow-x-hidden'>
+		<svg viewBox='0 0 120 28'>
 			<defs>
 				<filter id='goo'>
 					<feGaussianBlur in='SourceGraphic' stdDeviation='1' result='blur' />

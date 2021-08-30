@@ -8,14 +8,15 @@ const Blobs = () => {
 		ColorRange = toxi.color.ColorRange,
 		MathUtils = toxi.math.MathUtils
 
-	let polygons = []
-	const numVertices = 30
-	const numAutoPolys = 10
+	let isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
 
-	const isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
+	let POLYGONS = []
+	let HEIGHT = isSmallScreen ? 3.5 : 2
+	const VERTICES = 30
+	const AUTOPOLYS = isSmallScreen ? 25 : 10
 
 	const setup = (p5, canvasParentRef) => {
-		p5.createCanvas(window.innerWidth, window.innerHeight * 2).parent(
+		p5.createCanvas(window.innerWidth, window.innerHeight * HEIGHT).parent(
 			canvasParentRef
 		)
 		p5.noStroke()
@@ -24,14 +25,14 @@ const Blobs = () => {
 	const draw = (p5) => {
 		p5.clear()
 
-		if (polygons.length < numAutoPolys) {
+		if (POLYGONS.length < AUTOPOLYS) {
 			createPolyAt(
 				MathUtils.random(0, window.innerWidth),
-				MathUtils.random(0, window.innerHeight * 2)
+				MathUtils.random(0, window.innerHeight * HEIGHT)
 			)
 		}
 
-		polygons.forEach((p) => {
+		POLYGONS.forEach((p) => {
 			p5.fill(p.col.toRGBACSS())
 			p.smooth(0.05, 0)
 			p5.beginShape()
@@ -47,7 +48,10 @@ const Blobs = () => {
 	}
 
 	const windowResized = (p5) => {
-		p5.resizeCanvas(window.innerWidth, window.innerHeight * 2)
+		isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
+		HEIGHT = isSmallScreen ? 3.5 : 2
+
+		p5.resizeCanvas(window.innerWidth, window.innerHeight * HEIGHT)
 	}
 
 	const createPolyAt = (x, y) => {
@@ -59,15 +63,15 @@ const Blobs = () => {
 			? MathUtils.random(30, 100)
 			: MathUtils.random(30, 300)
 
-		for (let i = 0; i < numVertices; i++) {
+		for (let i = 0; i < VERTICES; i++) {
 			poly.add(
-				Vec2D.fromTheta((i / numVertices) * MathUtils.TWO_PI)
+				Vec2D.fromTheta((i / VERTICES) * MathUtils.TWO_PI)
 					.scaleSelf(MathUtils.random(0.2, 1) * radius)
 					.addSelf(x, y)
 			)
 		}
 
-		polygons.push(poly)
+		POLYGONS.push(poly)
 	}
 
 	function ColoredPolygon(tcolor) {

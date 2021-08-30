@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 const Track = ({ name, img, description }) => (
-	<div className='card glass flex flex-col md:flex-row md:text-left text-center items-center p-6 border-2 border-gray-200 rounded-lg shadow-sm hover:shadow-md'>
+	<div className='glass flex flex-col md:flex-row md:text-left text-center items-center p-6 border-2 border-gray-200 rounded-lg shadow-sm hover:shadow-md'>
 		{/* <Image src={img} alt={name} width='25px' height='25px' /> */}
 		<div className='p-3 m-4 bg-primary text-dark rounded-full'>
 			<svg

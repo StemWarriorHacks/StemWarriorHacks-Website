@@ -6,7 +6,7 @@ module.exports = {
 		'Register today and open your eyes to the depths, diversity, and power of computer science!',
 	date: 'November 5, 2021',
 	url: 'https://stemwarriorhacks.org',
-	twitter: '@windyhacks',
+	twitter: '@stemwarriorhacks',
 	img: 'https://stemwarriorhacks.org/card_1.png',
 	urls: {
 		twitter: 'https://twitter.com/stemwarriorhacks',
@@ -15,6 +15,7 @@ module.exports = {
 		discord: 'https://discord.gg/zVfstssWhe',
 		github: 'https://github.com/StemWarriorHacks',
 		youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+		devpost: 'https://stemwarriorhacks-winter.devpost.com',
 	},
 	org: {
 		'@context': 'https://schema.org',
@@ -60,12 +61,12 @@ module.exports = {
 			price: '0',
 			priceCurrency: 'USD',
 			availability: 'https://schema.org/InStock',
-			validFrom: '2019-04-01',
-			validThrough: '2019-06-22',
+			validFrom: '2021-11-05',
+			validThrough: '2021-11-08',
 		},
 		performer: {
 			'@type': 'PerformingGroup',
-			name: 'StemWarrior Hacks Team',
+			name: 'StemWarriorHacks Team',
 		},
 	},
 	tracks: [

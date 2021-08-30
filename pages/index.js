@@ -13,14 +13,14 @@ const Snow = dynamic(import('../utils/Snow'), { ssr: false })
 const Home = () => (
 	<div>
 		{/* <div className='absolute bg'></div> */}
-		<div className='print-none absolute top-full max-w-screen -z-1'>
+		<div className='absolute top-full max-w-full -z-1'>
 			<Blobs />
 		</div>
-		<div className='print-none absolute max-w-screen -z-1'>
+		<div className='absolute max-w-full -z-1'>
 			<Snow />
 		</div>
 		<Hero />
-		<div className='select-none container w-11/12 md:w-4/5 my-10 mx-auto'>
+		<div className='select-none w-11/12 md:w-4/5 my-10 mx-auto'>
 			<About />
 			<Tracks />
 			<Sponsors />
