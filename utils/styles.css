@@ -89,6 +89,12 @@ svg {
 	}
 }
 
+@keyframes rotate {
+	to {
+		transform: rotateZ(45deg);
+	}
+}
+
 @media print {
 	div {
 		break-inside: avoid;

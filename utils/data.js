@@ -119,24 +119,131 @@ module.exports = {
 	],
 	schedule: [
 		{
-			date: 'Sat, June 22',
+			date: 'Fri, November 5',
 			events: [
 				{
-					time: '',
-					name: '',
-					emoji: '',
+					time: '9:00 AM',
+					name: 'Beginning of Day 1',
+				},
+				{
+					time: '4:00 PM',
+					name: 'Opening Ceremony',
+				},
+				{
+					time: '6:30 PM',
+					name: 'Game Night',
+				},
+				{
+					time: '8:00 PM',
+					name: 'End of Day 1',
 				},
 			],
 		},
 		{
-			date: 'Sun, June 23',
+			date: 'Sat, Novemvber 6',
 			events: [
 				{
-					time: '',
-					name: '',
-					emoji: '',
+					time: '9:00 AM',
+					name: 'Beginning of Day 2',
+				},
+				{
+					time: ' 10:00 AM ',
+					name: 'How to get project ideas?',
+				},
+				{
+					time: '12:00 AM',
+					name: 'EchoAr',
+				},
+				{
+					time: '1:00 PM',
+					name: 'Intro to JavaScript',
+				},
+				{
+					time: '3:00 PM',
+					name: 'Begineers C++ ',
+				},
+				{
+					time: '7:00 PM',
+					name: 'Intro to Figma',
+				},
+				{
+					time: '8:00 PM',
+					name: 'End of Day 2',
 				},
 			],
+		},
+		{
+			date: 'Sun, November 7',
+			events: [
+				{
+					time: '9:00 AM',
+					name: 'Beginning of Day 3',
+				},
+				{
+					time: '10:00 AM',
+					name: 'EconHacks Workshop',
+				},
+				{
+					time: '2:00 PM',
+					name: 'Guest Speaker',
+				},
+				{
+					time: '4:00 PM',
+					name: 'Discord Bots with JavaScript',
+				},
+				{
+					time: '12:00 AM',
+					name: 'End of Day 3, and Submission Deadline',
+				},
+			],
+		},
+	],
+	questions: [
+		{
+			question: 'What am I supposed to do in this hackathon?',
+			answer:
+				'You can attend the free workshops we provide, and you can also start making your project which you can submit to some of the several tracks we have available! ',
+		},
+		{
+			question: 'Who can attend?',
+			answer:
+				'The minimum age requirement is 13. Anybody above can attend, however we would highly encourage high-schooler to try and sign up for this event. ',
+		},
+		{
+			question: 'What is unique about this event?',
+			answer:
+				'We have expected many scenarios, and have tried our best to deal with each one. The StemWarriorHacks will be a unique experience for you, and you can expect to have a fun time! ',
+		},
+		{
+			question: "What if I don't know any code?",
+			answer:
+				'No problem! We have several workshops that you can attend to learn the fundamentals of different languages. We will always provide assistance if you need help with your projects. ',
+		},
+		{
+			question: 'Is this online?',
+			answer:
+				'To make this a learning opportunity for everyone this event had been made online. Anyone can attend, and from anywhere. ',
+		},
+		{
+			question:
+				'How about time-zone issues, and communicating with teammates across the world?',
+			answer:
+				'Since this is an international event, we expected to revceive people from around the world. Our InterHackBot has been setup to make it a much smoother experience.',
+		},
+		{
+			question: "What's the cost?",
+			answer:
+				'Absolutely none. We want to be able to have a communtiy where people can learn, and experiment with others from around the world for free. ',
+		},
+		{
+			question: 'I want to register!',
+			answer:
+				'Great, you can sign up through our devpost, and later join our discord to hear more updates, find teammates, and ask us any questios!',
+		},
+		{
+			question: 'I have more questions!?',
+			answer:
+				'Great. You can always ask in our official communication platform (Discord): Or you can contact us at: contact@stemwarriorhack.org ',
 		},
 	],
 }

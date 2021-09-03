@@ -1,13 +1,7 @@
 import React from 'react'
-import {
-	FaDiscord,
-	FaInstagram,
-	FaGithub,
-	FaTwitter,
-	FaYoutube,
-} from 'react-icons/fa'
 import Link from 'next/link'
 import { urls } from '../utils/data'
+import { Discord, Github, Instagram, Twitter, Youtube } from '../utils/Icons'
 
 const Service = ({ href, label, children }) => (
 	<Link href={href} aria-label={label}>
@@ -63,19 +57,19 @@ const Footer = ({ children }) => (
 			</a>
 			<div className='services flex py-6 w-9/12 sm:w-1/3 justify-around  z-10'>
 				<Service href={urls.discord} label='discord'>
-					<FaDiscord className='hover:text-purple-500' />
+					<Discord className='hover:text-purple-500' />
 				</Service>
 				<Service href={urls.instagram} label='instagram'>
-					<FaInstagram className='hover:text-pink-500' />
+					<Instagram className='hover:text-pink-500' />
 				</Service>
 				<Service href={urls.github} label='github'>
-					<FaGithub className='hover:text-gray-500' />
+					<Github className='hover:text-gray-500' />
 				</Service>
 				<Service href={urls.twitter} label='twitter'>
-					<FaTwitter className='hover:text-blue-500' />
+					<Twitter className='hover:text-blue-500' />
 				</Service>
 				<Service href={urls.youtube} label='youtube'>
-					<FaYoutube className='hover:text-red-500' />
+					<Youtube className='hover:text-red-500' />
 				</Service>
 			</div>
 			<p className='text-sm py-3 text-gray-400  z-10'>

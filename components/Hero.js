@@ -5,12 +5,12 @@ import Navbar from './Navbar'
 
 const Hero = () => {
 	return (
-		<div className='h-screen text-white flex justify-center items-center'>
+		<div id='home' className='h-screen'>
 			{/* <div className='print-none absolute max-w-screen -z-1'>
 				<Snow />
 			</div> */}
-			{/* <Navbar /> */}
-			<div className='flex flex-col justify-center items-center md:items-flexstart w-11/12 md:w-4/5 my-10 mx-auto'>
+			<Navbar />
+			{/* <div className='flex flex-col justify-center items-center md:items-flexstart w-11/12 md:w-4/5 my-10 mx-auto'>
 				<p className='text-5xl md:text-8xl font-bold mb-4'>
 					<span className='text-primary'>S</span>tem
 					<span className='text-primary'>W</span>arrior{' '}
@@ -31,7 +31,7 @@ const Hero = () => {
 						</button>
 					</a>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	)
 }

@@ -1,8 +1,15 @@
+import { useContext } from 'react'
+import { StateContext } from '../utils/StateContext'
+
 const Sponsors = () => {
+	const { state } = useContext(StateContext)
+
 	return (
 		<div
 			id='sponsors'
-			className='overflow-x-hidden flex flex-col justify-center items-center my-6'>
+			className={`glass ${
+				state && 'dark'
+			} overflow-x-hidden flex flex-col justify-center items-center my-6 rounded-lg md:border md:border-gray-200 md:dark:border md:dark:border-gray-500`}>
 			<p
 				className='text-4xl text-center font-bold my-6'
 				style={{

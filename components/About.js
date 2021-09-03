@@ -1,9 +1,18 @@
+import { useContext } from 'react'
+import { StateContext } from '../utils/StateContext'
+
 const About = () => {
 	const textUnder = {
 		boxShadow: 'inset 0 -.400em 0 0 rgba(255,190,0, 0.4)',
 	}
+	const { state } = useContext(StateContext)
+
 	return (
-		<div className='glass overflow-x-hidden h-3/4 flex flex-col justify-center items-center md:border-2 md:border-gray-200 rounded-lg md:shadow-sm mb-10 px-8 py-10'>
+		<div
+			id='about'
+			className={`glass ${
+				state && 'dark'
+			} overflow-x-hidden h-3/4 flex flex-col justify-center items-center md:border-2 md:border-gray-200 md:dark:border md:dark:border-gray-500 rounded-lg md:shadow-sm mb-10 px-8 py-10`}>
 			<p className='text-4xl font-bold my-6' style={textUnder}>
 				Our Mission
 			</p>

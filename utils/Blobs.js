@@ -1,6 +1,7 @@
-import { memo } from 'react'
+import { memo, useContext } from 'react'
 import Sketch from 'react-p5'
 import toxi from 'toxiclibsjs'
+import { StateContext } from './StateContext'
 
 const Blobs = () => {
 	const Polygon2D = toxi.geom.Polygon2D,
@@ -8,12 +9,17 @@ const Blobs = () => {
 		ColorRange = toxi.color.ColorRange,
 		MathUtils = toxi.math.MathUtils
 
+	const { state } = useContext(StateContext)
 	let isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
 
 	let POLYGONS = []
-	let HEIGHT = isSmallScreen ? 3.5 : 2
+	let HEIGHT = isSmallScreen ? 5.15 : 3.5
+
 	const VERTICES = 30
 	const AUTOPOLYS = isSmallScreen ? 25 : 10
+
+	// console.log(window.innerHeight * HEIGHT)
+	// console.log(document.body.clientHeight)
 
 	const setup = (p5, canvasParentRef) => {
 		p5.createCanvas(window.innerWidth, window.innerHeight * HEIGHT).parent(
@@ -24,6 +30,7 @@ const Blobs = () => {
 
 	const draw = (p5) => {
 		p5.clear()
+		state && p5.background('#262626')
 
 		if (POLYGONS.length < AUTOPOLYS) {
 			createPolyAt(
@@ -49,7 +56,7 @@ const Blobs = () => {
 
 	const windowResized = (p5) => {
 		isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
-		HEIGHT = isSmallScreen ? 3.5 : 2
+		HEIGHT = isSmallScreen ? 4 : 3.5
 
 		p5.resizeCanvas(window.innerWidth, window.innerHeight * HEIGHT)
 	}
