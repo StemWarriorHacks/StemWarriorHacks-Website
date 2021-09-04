@@ -17,9 +17,7 @@ export const Faq = () => {
 	return (
 		<div
 			id='faqs'
-			className={`glass ${
-				state && 'dark'
-			}  overflow-x-hidden h-3/4 flex flex-col justify-center items-center md:border-2 md:border-gray-200 md:dark:border md:dark:border-gray-500 rounded-lg md:shadow-sm my-10 px-4 md:px-10 md:px-4 py-10`}>
+			className='overflow-x-hidden h-3/4 flex flex-col justify-center items-center rounded-lg my-10 px-4 md:px-10 md:px-4 py-10'>
 			<p
 				className='text-4xl font-bold mb-4 mt-2'
 				style={{

@@ -8,12 +8,6 @@ html {
 	scrollbar-color: rgba(255, 191, 0, 0.725) rgba(38, 38, 38, 0.2);
 }
 
-.fix-w {
-	width: 100vw;
-	right: 0;
-	left: 0;
-}
-
 ::-webkit-scrollbar {
 	width: 0.8vw;
 	z-index: 1000;
@@ -35,13 +29,6 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: rgba(255, 190, 0, 0.8);
-}
-
-.bg {
-	width: 100vw;
-	height: 200vh;
-	background-color: #262626;
-	z-index: -1000;
 }
 
 .glass {
@@ -86,12 +73,6 @@ svg {
 @keyframes wave {
 	to {
 		transform: translateX(-100%);
-	}
-}
-
-@keyframes rotate {
-	to {
-		transform: rotateZ(45deg);
 	}
 }
 

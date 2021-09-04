@@ -238,12 +238,12 @@ module.exports = {
 		{
 			question: 'I want to register!',
 			answer:
-				'Great, you can sign up through our devpost, and later join our discord to hear more updates, find teammates, and ask us any questios!',
+				"Great, you can sign up through our <a href='https://stemwarriorhacks-winter.devpost.com' target='_blank' rel='noopener noreferrer'>devpost, and later join our discord to hear more updates, find teammates, and ask us any questions!",
 		},
 		{
 			question: 'I have more questions!?',
 			answer:
-				'Great. You can always ask in our official communication platform (Discord): Or you can contact us at: contact@stemwarriorhack.org ',
+				"Great. You can always ask in our official communication platform (<a href='https://discord.gg/zVfstssWhe' className='text-primary font-semibold'>Discord</a>): Or you can contact us at: <a href='mailto:contact@stemwarriorhack.org' className='text-primary font-semibold'>contact@stemwarriorhack.org</a>",
 		},
 	],
 }

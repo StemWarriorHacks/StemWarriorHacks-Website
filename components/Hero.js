@@ -1,4 +1,6 @@
 import { urls } from '../utils/data'
+import { Devpost, Discord } from '../utils/Icons'
+import { FaDiscord } from 'react-icons/fa'
 import Navbar from './Navbar'
 
 // const Snow = dynamic(import('../utils/Snow'), { ssr: false })
@@ -10,28 +12,26 @@ const Hero = () => {
 				<Snow />
 			</div> */}
 			<Navbar />
-			{/* <div className='flex flex-col justify-center items-center md:items-flexstart w-11/12 md:w-4/5 my-10 mx-auto'>
-				<p className='text-5xl md:text-8xl font-bold mb-4'>
-					<span className='text-primary'>S</span>tem
-					<span className='text-primary'>W</span>arrior{' '}
-					<span className='text-primary'>H</span>acks
+			<div className='flex flex-col justify-center items-center md:items-start h-3/5 w-11/12 md:w-4/5 my-10 mx-auto'>
+				<p className='text-5xl md:text-8xl font-bold mb-4 text-dark'>
+					Stem Warrior Hacks
 				</p>
-				<p className='text-2xl md:text-3xl'>
-					November <span>3rd to 5th</span>, 2021
+				<p className='text-2xl font-semibold md:text-3xl'>
+					November 5th - 8th, 2021
 				</p>
-				<div className='flex flex-col justify-between md:flex-row w-4/5 md:w-3/5 lg:1/2'>
+				<div className='flex flex-col justify-between md:flex-row w-4/5 md:w-3/6'>
 					<a href={urls.devpost}>
-						<button className='btn px-6 py-2 my-6 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
+						<button className='btn px-6 py-2 my-2 md:my-6 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
 							Register on Devpost
 						</button>
 					</a>
-					<a href={urls.discord} target='_blank' rel='noreferrer'>
-						<button className='btn px-6 py-2 my-6 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
+					<a href={urls.discord} target='_blank' rel='noopener noreferrer'>
+						<button className='px-6 py-2 my-2 md:my-6 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
 							Join our Discord
 						</button>
 					</a>
 				</div>
-			</div> */}
+			</div>
 		</div>
 	)
 }

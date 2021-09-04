@@ -3,14 +3,14 @@ import Sketch from 'react-p5'
 import { StateContext } from './StateContext'
 
 const Background = () => {
+	let isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
+
 	const { state, setState } = useContext(StateContext)
 	const SNOW_COLOR = 'snow'
-	const SNOWFLAKES_PER_LAYER = 50
-	const MAX_SIZE = 10
+	const SNOWFLAKES_PER_LAYER = isSmallScreen ? 20 : 50
+	const MAX_SIZE = isSmallScreen ? 7 : 10
 	const GRAVITY = 0.75
 	const LAYER_COUNT = 4
-
-	let isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
 
 	const SKY_COLOR = state ? '#262626' : 'skyblue',
 		SKY_SPACE = isSmallScreen ? 0.3 : 0.5,
@@ -25,7 +25,7 @@ const Background = () => {
 		SUN_GLOW = 100,
 		SUN_RADIUS = isSmallScreen ? 50 : 100
 
-	const RIDGE_TOP_COLOR = '#f3f3f3',
+	const RIDGE_TOP_COLOR = '#ccc',
 		RIDGE_BOT_COLOR = '#262626',
 		RIDGE_STEP = 1,
 		RIDGE_AMP = isSmallScreen ? 50 : 250,

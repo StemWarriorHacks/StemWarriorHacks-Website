@@ -13,7 +13,7 @@ const Navbar = () => {
 				<a className='inline-flex items-center p-2 mr-4' href='/logo.png'>
 					<div
 						viewBox='0 0 24 24'
-						className='fill-current text-white h-8 w-8 mr-2'>
+						className='fill-current text-dark h-8 w-8 mr-2'>
 						<Image
 							src='/logo.png'
 							height='100px'
@@ -28,7 +28,7 @@ const Navbar = () => {
 					</span>
 				</a>
 				<button
-					className=' inline-flex p-3 rounded lg:hidden text-black ml-auto hover:text-white outline-none'
+					className=' inline-flex p-3 rounded lg:hidden ml-auto text-dark outline-none'
 					onClick={handleClick}>
 					<svg
 						className='w-6 h-6'

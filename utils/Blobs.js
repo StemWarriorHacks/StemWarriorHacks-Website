@@ -13,7 +13,7 @@ const Blobs = () => {
 	let isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
 
 	let POLYGONS = []
-	let HEIGHT = isSmallScreen ? 5.15 : 3.5
+	let HEIGHT = isSmallScreen ? 6.15 : 4.28
 
 	const VERTICES = 30
 	const AUTOPOLYS = isSmallScreen ? 25 : 10

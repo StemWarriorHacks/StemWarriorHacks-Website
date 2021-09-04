@@ -21,7 +21,7 @@ const Faqs = () => {
 					</div>
 					{clicked === i ? (
 						<div>
-							<p>{q.answer}</p>
+							<p></p>
 						</div>
 					) : null}
 				</>

@@ -5,7 +5,7 @@ import { Discord, Github, Instagram, Twitter, Youtube } from '../utils/Icons'
 
 const Service = ({ href, label, children }) => (
 	<Link href={href} aria-label={label}>
-		<a target='_blank' className={'text-2xl'}>
+		<a target='_blank' rel='noopener noreferrer' className={'text-2xl'}>
 			{children}
 		</a>
 	</Link>

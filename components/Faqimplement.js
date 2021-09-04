@@ -24,9 +24,9 @@ const Faqimplement = ({ question, answer, onClick, show }) => {
 				<span className='text-xl font-bold'>{show ? '-' : '+'}</span>
 			</p>
 			{show && (
-				<p className='transistion trsnsistion-delay-700 p-2 rounded-lg text-gray-800 dark:text-light'>
-					{answer}
-				</p>
+				<p
+					dangerouslySetInnerHTML={{ __html: answer }}
+					className='transistion trsnsistion-delay-700 p-2 rounded-lg text-gray-800 dark:text-light'></p>
 			)}
 		</div>
 	)
