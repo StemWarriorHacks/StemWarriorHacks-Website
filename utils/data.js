@@ -5,11 +5,11 @@ module.exports = {
 	description:
 		'Register today and open your eyes to the depths, diversity, and power of computer science!',
 	date: 'November 5, 2021',
-	url: 'https://stemwarriorhacks.org',
-	twitter: '@stemwarriorhacks',
-	img: 'https://stemwarriorhacks.org/card_1.png',
+	url: 'http://localhost:3000',
+	twitter: '@HacksStem',
+	img: 'https://stemwarriorhacks.org/logo.png',
 	urls: {
-		twitter: 'https://twitter.com/stemwarriorhacks',
+		twitter: 'https://twitter.com/HacksStem',
 		instagram: 'https://www.instagram.com/stem_warrior_hacks',
 		email: 'mailto:contact@stemwarriorhacks.org',
 		discord: 'https://discord.gg/zVfstssWhe',
@@ -22,9 +22,9 @@ module.exports = {
 		'@type': 'Organization',
 		name: 'StemWarrior Hacks',
 		url: 'https://stemwarriorhacks.org',
-		logo: 'https://stemwarriorhacks.org/flag.png',
+		logo: 'https://stemwarriorhacks.org/logo.png',
 		sameAs: [
-			'https://twitter.com/stemwarriorhacks',
+			'https://twitter.com/HacksStem',
 			'https://www.instagram.com/stem_warrior_hacks',
 			'https://github.com/StemWarriorHacks',
 		],
@@ -47,7 +47,7 @@ module.exports = {
 			'Register today and open your eyes to the depths, diversity, and power of computer science!',
 		isAccessibleForFree: true,
 		url: 'https://stemwarriorhacks.org',
-		image: 'https://stemwarriorhacks.org/flag-alt-teal.png',
+		image: 'https://stemwarriorhacks.org/logo.png',
 		location: {},
 		sponsor: {
 			'@type': 'Organization',
@@ -74,27 +74,27 @@ module.exports = {
 			name: 'Beginner Hack',
 			description:
 				'A beginner to Hackathons, or/and coding? No problem! This track specifically targets beginners who made a valiant effort.',
-			image: '',
+			image: '/beginner.png',
 		},
 		{
 			name: 'Most Creative Hack',
 			description:
 				"Even if your project isn't the best, if it's the most innovative, then there will surely be a prize for you!",
-			image: '',
+			image: '/creative.png',
 		},
 		{
 			name: 'Solo Hack',
 			description: "Are you a lone wolf! Don't worry, you still have a chance!",
-			image: '',
+			image: '/solo.png',
 		},
 		{
 			name: 'Best Hack ',
 			description:
 				'All projects are naturally submitted for this. May the the best hack win!',
-			image: '',
+			image: '/best.png',
 		},
 	],
-	leaders: [{ name: '', pronouns: '' }],
+	leaders: [{ name: '', pronouns: '', contact: '' }],
 	sponsors: [
 		{
 			name: '',

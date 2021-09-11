@@ -9,7 +9,7 @@ const Background = () => {
 	const SNOW_COLOR = 'snow'
 	const SNOWFLAKES_PER_LAYER = isSmallScreen ? 20 : 50
 	const MAX_SIZE = isSmallScreen ? 7 : 10
-	const GRAVITY = 0.75
+	const GRAVITY = 0.5
 	const LAYER_COUNT = 4
 
 	const SKY_COLOR = 'skyblue',

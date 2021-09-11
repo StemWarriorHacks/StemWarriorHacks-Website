@@ -18,7 +18,7 @@ const Sponsors = () => {
 				Sponsors
 			</p>
 			<a
-				href='https://drive.google.com/file/d/1souFsNdDYcjBsaCE7GG2b5RZUOck9sne/view'
+				href='https://drive.google.com/file/d/12DSuL7gvmbd1gUg9kHRUJej23ZNbWMsv/view'
 				target='_blank'
 				rel='noreferrer'>
 				<button className='btn px-6 py-2 my-6 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>

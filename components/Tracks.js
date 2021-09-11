@@ -19,7 +19,7 @@ const Tracks = () => {
 						className='flex-1'
 						key={i}
 						name={track.name}
-						img='/blob-scene.svg'
+						img={track.image}
 						description={track.description}
 					/>
 				))}
