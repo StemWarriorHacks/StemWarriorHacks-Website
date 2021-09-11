@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 const Navbar = () => {
 	const [active, setActive] = useState(false)
 
@@ -14,7 +14,7 @@ const Navbar = () => {
 					<div
 						viewBox='0 0 24 24'
 						className='fill-current text-dark h-8 w-8 mr-2'>
-						<Image
+						<img
 							src='/logo.png'
 							height='100px'
 							width='100px'

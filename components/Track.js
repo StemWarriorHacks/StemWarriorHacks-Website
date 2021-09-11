@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import { useContext } from 'react'
 import { StateContext } from '../utils/StateContext'
 
