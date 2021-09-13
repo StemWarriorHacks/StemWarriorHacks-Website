@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-// import Image from 'next/image'
+import Image from 'next/image'
 import { useContext } from 'react'
 import About from '../components/About'
 import Schedule from '../components/Schedule'
@@ -47,7 +47,7 @@ const Home = () => {
 			</div>
 			<Footer>
 				<div onClick={() => setState(!state)}>
-					<img
+					<Image
 						src='/logo.png'
 						width='50'
 						height='50'

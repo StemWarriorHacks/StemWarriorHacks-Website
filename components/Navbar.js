@@ -1,5 +1,6 @@
 import { useState } from 'react'
-// import Image from 'next/image'
+import Image from 'next/image'
+
 const Navbar = () => {
 	const [active, setActive] = useState(false)
 
@@ -10,11 +11,11 @@ const Navbar = () => {
 	return (
 		<>
 			<nav className='glass rounded-b-lg flex items-center flex-wrap p-2 '>
-				<a className='inline-flex items-center p-2 mr-4' href='/logo.png'>
+				<a className='inline-flex items-center p-2 mr-4' href='#'>
 					<div
 						viewBox='0 0 24 24'
 						className='fill-current text-dark h-8 w-8 mr-2'>
-						<img
+						<Image
 							src='/logo.png'
 							height='100px'
 							width='100px'

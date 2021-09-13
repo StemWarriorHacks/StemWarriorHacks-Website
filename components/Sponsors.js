@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import { useContext } from 'react'
+import { sponsors } from '../utils/data'
 import { StateContext } from '../utils/StateContext'
 
 const Sponsors = () => {
@@ -17,14 +19,38 @@ const Sponsors = () => {
 				}}>
 				Sponsors
 			</p>
-			<a
-				href='https://drive.google.com/file/d/12DSuL7gvmbd1gUg9kHRUJej23ZNbWMsv/view'
-				target='_blank'
-				rel='noreferrer'>
-				<button className='btn px-6 py-2 my-6 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
-					View our Sponsorship Prospectus
-				</button>
-			</a>
+			<div className='flex flex-col md:w-10/12 justify-center items-center'>
+				<a
+					href='https://drive.google.com/file/d/12DSuL7gvmbd1gUg9kHRUJej23ZNbWMsv/view'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<button className='btn px-6 py-2 my-6 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
+						View our Sponsorship Prospectus
+					</button>
+				</a>
+				<div className='relative grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center my-4 mx-auto w-full'>
+					{sponsors.map((sponsor) => (
+						<a
+							href={sponsor.link}
+							target='_blank'
+							className='mx-auto'
+							rel='noopener noreferrer'
+							key={sponsor.name}
+							style={{
+								position: 'relative',
+								width: '250px',
+								height: '200px',
+							}}>
+							<Image
+								src={sponsor.image}
+								alt={sponsor.name}
+								layout='fill'
+								objectFit='contain'
+							/>
+						</a>
+					))}
+				</div>
+			</div>
 		</div>
 	)
 }

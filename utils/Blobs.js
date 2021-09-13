@@ -13,7 +13,7 @@ const Blobs = () => {
 	let isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
 
 	let POLYGONS = []
-	let HEIGHT = isSmallScreen ? 6.1 : 4.28
+	let HEIGHT = document.body.clientHeight - window.innerHeight
 
 	const VERTICES = 30
 	const AUTOPOLYS = isSmallScreen ? 25 : 10
@@ -22,9 +22,7 @@ const Blobs = () => {
 	// console.log(document.body.clientHeight)
 
 	const setup = (p5, canvasParentRef) => {
-		p5.createCanvas(window.innerWidth, window.innerHeight * HEIGHT).parent(
-			canvasParentRef
-		)
+		p5.createCanvas(window.innerWidth, HEIGHT).parent(canvasParentRef)
 		p5.noStroke()
 	}
 
@@ -35,7 +33,7 @@ const Blobs = () => {
 		if (POLYGONS.length < AUTOPOLYS) {
 			createPolyAt(
 				MathUtils.random(0, window.innerWidth),
-				MathUtils.random(0, window.innerHeight * HEIGHT)
+				MathUtils.random(0, HEIGHT)
 			)
 		}
 
@@ -56,9 +54,9 @@ const Blobs = () => {
 
 	const windowResized = (p5) => {
 		isSmallScreen = matchMedia('screen and (max-width: 480px)').matches
-		HEIGHT = isSmallScreen ? 4 : 3.5
+		HEIGHT = document.body.clientHeight - window.innerHeight
 
-		p5.resizeCanvas(window.innerWidth, window.innerHeight * HEIGHT)
+		p5.resizeCanvas(window.innerWidth, HEIGHT)
 	}
 
 	const createPolyAt = (x, y) => {

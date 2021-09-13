@@ -97,9 +97,44 @@ module.exports = {
 	leaders: [{ name: '', pronouns: '', contact: '' }],
 	sponsors: [
 		{
-			name: '',
-			link: '',
-			image: '',
+			name: 'Slingshot',
+			link: 'https://slingshotahead.com/',
+			image: '/IMG_8113.png',
+		},
+		{
+			name: 'Taskade',
+			link: 'https://www.taskade.com/',
+			image: '/IMG_8114.png',
+		},
+		{
+			name: 'Script Foundation',
+			link: 'https://www.scriptindia.org/',
+			image: '/IMG_8115.png',
+		},
+		{
+			name: 'Axure',
+			link: 'https://www.axure.com/',
+			image: '/IMG_8116.png',
+		},
+		{
+			name: 'DigitalOcean',
+			link: 'https://www.digitalocean.com/',
+			image: '/IMG_8117.png',
+		},
+		{
+			name: 'Inspirit AI',
+			link: 'https://www.inspiritai.com/',
+			image: '/IMG_8118.png',
+		},
+		{
+			name: 'Wolfram Language',
+			link: 'https://www.wolframalpha.com/',
+			image: '/IMG_8119.png',
+		},
+		{
+			name: '.xyz',
+			link: 'https://gen.xyz/',
+			image: '/IMG_8120.png',
 		},
 	],
 	additionalSupport: [
