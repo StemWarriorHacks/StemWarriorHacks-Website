@@ -29,7 +29,8 @@ const Navbar = () => {
 					</span>
 				</a>
 				<button
-					className=' inline-flex p-3 rounded lg:hidden ml-auto text-dark outline-none'
+					aria-label='menu-toggle'
+					className='inline-flex p-3 rounded lg:hidden ml-auto text-dark outline-none'
 					onClick={handleClick}>
 					<svg
 						className='w-6 h-6'

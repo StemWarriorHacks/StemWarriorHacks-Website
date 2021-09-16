@@ -24,7 +24,9 @@ const Sponsors = () => {
 					href='https://drive.google.com/file/d/12DSuL7gvmbd1gUg9kHRUJej23ZNbWMsv/view'
 					target='_blank'
 					rel='noopener noreferrer'>
-					<button className='btn px-6 py-2 my-6 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
+					<button
+						aria-label='sponsorship prospectus'
+						className='btn px-6 py-2 my-6 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
 						View our Sponsorship Prospectus
 					</button>
 				</a>

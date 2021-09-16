@@ -14,12 +14,16 @@ const Hero = () => {
 				</p>
 				<div className='flex flex-col md:flex-row justify-center md:justify-between items-center w-4/5 xl:w-3/6'>
 					<a href={urls.devpost}>
-						<button className='btn px-6 py-2 my-2 md:my-6 w-56 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
+						<button
+							aria-label='register on devpost'
+							className='btn px-6 py-2 my-2 md:my-6 w-56 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
 							Register on Devpost
 						</button>
 					</a>
 					<a href={urls.discord} target='_blank' rel='noopener noreferrer'>
-						<button className='px-6 py-2 my-2 md:my-6 w-56 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
+						<button
+							aria-label='join discord'
+							className='px-6 py-2 my-2 md:my-6 w-56 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
 							Join our Discord
 						</button>
 					</a>

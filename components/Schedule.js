@@ -38,16 +38,19 @@ const Schedule = () => {
 			</p>
 			<nav className='flex justify-center items-center'>
 				<button
+					aria-label='day 1'
 					className='btn px-4 md:px-6 py-2 my-4 md:my-6 mx-2 md:mx-4 bg-primary text-dark font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'
 					onClick={() => setActive('DayOne')}>
 					DayOne
 				</button>
 				<button
+					aria-label='day 2'
 					className='btn px-4 md:px-6 py-2 my-4 md:my-6 mx-2 md:mx-4 bg-primary text-dark font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'
 					onClick={() => setActive('DayTwo')}>
 					DayTwo
 				</button>
 				<button
+					aria-label='day 3'
 					className='btn px-4 md:px-6 py-2 my-4 md:my-6 mx-2 md:mx-4 bg-primary text-dark font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'
 					onClick={() => setActive('DayThree')}>
 					DayThree
