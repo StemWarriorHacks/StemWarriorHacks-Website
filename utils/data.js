@@ -5,9 +5,9 @@ module.exports = {
 	description:
 		'Register today and open your eyes to the depths, diversity, and power of computer science!',
 	date: 'November 5, 2021',
-	url: 'http://localhost:3000',
+	url: 'https://www.stemwarriorhacks.org/',
 	twitter: '@HacksStem',
-	img: 'https://stemwarriorhacks.org/logo.png',
+	img: 'https://www.stemwarriorhacks.org/logo.png',
 	urls: {
 		twitter: 'https://twitter.com/HacksStem',
 		instagram: 'https://www.instagram.com/stem_warrior_hacks',
@@ -21,8 +21,8 @@ module.exports = {
 		'@context': 'https://schema.org',
 		'@type': 'Organization',
 		name: 'StemWarrior Hacks',
-		url: 'https://stemwarriorhacks.org',
-		logo: 'https://stemwarriorhacks.org/logo.png',
+		url: 'https://www.stemwarriorhacks.org',
+		logo: 'https://www.stemwarriorhacks.org/logo.png',
 		sameAs: [
 			'https://twitter.com/HacksStem',
 			'https://www.instagram.com/stem_warrior_hacks',
@@ -33,7 +33,7 @@ module.exports = {
 				'@type': 'ContactPoint',
 				email: 'contact@stemwarriorhacks.org',
 				contactType: 'customer support',
-				url: 'https://stemwarriorhacks.org',
+				url: 'https://www.stemwarriorhacks.org',
 			},
 		],
 	},
@@ -46,8 +46,8 @@ module.exports = {
 		description:
 			'Register today and open your eyes to the depths, diversity, and power of computer science!',
 		isAccessibleForFree: true,
-		url: 'https://stemwarriorhacks.org',
-		image: 'https://stemwarriorhacks.org/logo.png',
+		url: 'https://www.stemwarriorhacks.org',
+		image: 'https://www.stemwarriorhacks.org/logo.png',
 		location: {},
 		sponsor: {
 			'@type': 'Organization',
@@ -57,7 +57,7 @@ module.exports = {
 		offers: {
 			'@type': 'Offer',
 			name: 'Free Admission',
-			url: 'https://stemwarriorhacks.org',
+			url: 'https://www.stemwarriorhacks.org',
 			price: '0',
 			priceCurrency: 'USD',
 			availability: 'https://schema.org/InStock',
