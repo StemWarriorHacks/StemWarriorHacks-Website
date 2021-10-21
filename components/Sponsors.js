@@ -9,6 +9,7 @@ const Sponsors = () => {
 	return (
 		<div
 			id='sponsors'
+			data-aos='slide-up'
 			className={`glass ${
 				state && 'dark'
 			} overflow-x-hidden flex flex-col justify-center items-center my-6 rounded-lg md:border-2 md:border-gray-200 md:dark:border md:dark:border-gray-500`}>
@@ -38,6 +39,7 @@ const Sponsors = () => {
 							className='mx-auto'
 							rel='noopener noreferrer'
 							key={sponsor.name}
+							data-aos='zoom-in'
 							style={{
 								position: 'relative',
 								width: '250px',
