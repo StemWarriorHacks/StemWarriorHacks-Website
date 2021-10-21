@@ -5,6 +5,7 @@ const Tracks = () => {
 	return (
 		<div
 			id='tracks'
+			data-aos='slide-up'
 			className='overflow-x-hidden flex flex-col justify-center items-center'>
 			<p
 				className='text-4xl text-center font-bold my-6'

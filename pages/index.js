@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
+import AOS from 'aos'
 import About from '../components/About'
 import Schedule from '../components/Schedule'
 import Faq from '../components/Faq'
@@ -18,6 +19,9 @@ const NightBg = dynamic(import('../utils/NightBg'), { ssr: false })
 
 const Home = () => {
 	const { state, setState } = useContext(StateContext)
+	useEffect(() => {
+		AOS.init({ duration: 500 })
+	}, [])
 	// const theme = state ? 'dark' : 'light'
 	// localStorage.setItem('theme', theme)
 
@@ -46,7 +50,7 @@ const Home = () => {
 				<Faq />
 			</div>
 			<Footer>
-				<div onClick={() => setState(!state)}>
+				<div data-aos='zoom-in' onClick={() => setState(!state)}>
 					<Image
 						src='/logo.png'
 						width='50'

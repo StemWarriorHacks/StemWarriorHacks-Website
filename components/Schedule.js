@@ -26,6 +26,7 @@ const Schedule = () => {
 	return (
 		<div
 			id='schedule'
+			data-aos='slide-up'
 			className={`glass ${
 				state && 'dark'
 			} overflow-x-hidden h-3/4 flex flex-col justify-center items-center md:border-2 md:border-gray-200 md:dark:border md:dark:border-gray-500 rounded-lg md:shadow-sm mb-10 px-2 md:px-8 py-10`}>
@@ -38,18 +39,21 @@ const Schedule = () => {
 			</p>
 			<nav className='flex justify-center items-center'>
 				<button
+					data-aos='zoom-in'
 					aria-label='day 1'
 					className='btn px-4 md:px-6 py-2 my-4 md:my-6 mx-2 md:mx-4 bg-primary text-dark font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'
 					onClick={() => setActive('DayOne')}>
 					DayOne
 				</button>
 				<button
+					data-aos='zoom-in'
 					aria-label='day 2'
 					className='btn px-4 md:px-6 py-2 my-4 md:my-6 mx-2 md:mx-4 bg-primary text-dark font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'
 					onClick={() => setActive('DayTwo')}>
 					DayTwo
 				</button>
 				<button
+					data-aos='zoom-in'
 					aria-label='day 3'
 					className='btn px-4 md:px-6 py-2 my-4 md:my-6 mx-2 md:mx-4 bg-primary text-dark font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'
 					onClick={() => setActive('DayThree')}>

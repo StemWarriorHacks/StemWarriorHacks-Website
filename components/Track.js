@@ -7,6 +7,7 @@ const Track = ({ name, img, description }) => {
 
 	return (
 		<div
+			data-aos='zoom-in'
 			className={`glass ${
 				state && 'dark'
 			} flex flex-col md:flex-row md:text-left text-center items-center p-6 border-2 border-gray-200 dark:border dark:border-gray-500 rounded-lg shadow-sm hover:shadow-md dark:hover:shadow-xl`}>

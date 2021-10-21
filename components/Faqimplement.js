@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { StateContext } from '../utils/StateContext'
 
 const Faqimplement = ({ question, answer, onClick, show }) => {
@@ -11,6 +11,7 @@ const Faqimplement = ({ question, answer, onClick, show }) => {
 
 	return (
 		<div
+			data-aos='slide-up'
 			className={`p-2 glass ${
 				state && 'dark'
 			} rounded-lg shadow-sm md:shadow-none border-b dark:border-none cursor-pointer`}>

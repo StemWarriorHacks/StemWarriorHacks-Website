@@ -10,13 +10,14 @@ const About = () => {
 	return (
 		<div
 			id='about'
+			data-aos='slide-up'
 			className={`glass ${
 				state && 'dark'
 			} overflow-x-hidden h-3/4 flex flex-col justify-center items-center md:border-2 md:border-gray-200 md:dark:border md:dark:border-gray-500 rounded-lg md:shadow-sm mb-10 px-8 py-10`}>
 			<p className='text-4xl font-bold my-6' style={textUnder}>
 				Our Mission
 			</p>
-			<p className=''>
+			<p data-aos='zoom-in'>
 				StemWarriorHacks is an international, student-run,{' '}
 				<span style={textUnder}>501(c)(3) non-profit</span> hackathon aiming to
 				inspire young innovators and thinkers to pursue a career in the field of
