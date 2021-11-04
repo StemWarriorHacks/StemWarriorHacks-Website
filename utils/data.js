@@ -4,7 +4,7 @@ module.exports = {
 		'StemWarrior Hacks – An international, student-run, 501(c)(3) non-profit hackathon aiming to inspire young innovators.',
 	description:
 		'Register today and open your eyes to the depths, diversity, and power of computer science!',
-	date: 'November 5, 2021',
+	date: 'December 24, 2021',
 	url: 'https://www.stemwarriorhacks.org/',
 	twitter: '@HacksStem',
 	img: 'https://www.stemwarriorhacks.org/logo.png',
@@ -41,8 +41,8 @@ module.exports = {
 		'@context': 'http://schema.org/',
 		'@type': 'Event',
 		name: 'StemWarrior Hacks',
-		startDate: '2021-11-05T12:00',
-		endDate: '2021-11-08T12:00',
+		startDate: '2021-12-24T12:00',
+		endDate: '2021-12-26T12:00',
 		description:
 			'Register today and open your eyes to the depths, diversity, and power of computer science!',
 		isAccessibleForFree: true,
@@ -61,8 +61,8 @@ module.exports = {
 			price: '0',
 			priceCurrency: 'USD',
 			availability: 'https://schema.org/InStock',
-			validFrom: '2021-11-05',
-			validThrough: '2021-11-08',
+			validFrom: '2021-12-24',
+			validThrough: '2021-12-26',
 		},
 		performer: {
 			'@type': 'PerformingGroup',
@@ -154,7 +154,7 @@ module.exports = {
 	],
 	schedule: [
 		{
-			date: 'Fri, November 5',
+			date: 'Fri, December 24',
 			events: [
 				{
 					time: '9:00 AM',
@@ -175,7 +175,7 @@ module.exports = {
 			],
 		},
 		{
-			date: 'Sat, Novemvber 6',
+			date: 'Sat, December 25',
 			events: [
 				{
 					time: '9:00 AM',
@@ -208,7 +208,7 @@ module.exports = {
 			],
 		},
 		{
-			date: 'Sun, November 7',
+			date: 'Sun, December 26',
 			events: [
 				{
 					time: '9:00 AM',

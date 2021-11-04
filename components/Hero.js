@@ -14,7 +14,7 @@ const Hero = () => {
 				<p
 					data-aos='slide-up'
 					className='text-2xl font-semibold md:text-3xl mb-4'>
-					November 5th - 8th, 2021
+					December 24th - 26th, 2021
 				</p>
 				<div className='flex flex-col md:flex-row justify-center md:justify-between items-center w-4/5 xl:w-3/6'>
 					<a href={urls.devpost}>
