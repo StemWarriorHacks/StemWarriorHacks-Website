@@ -136,6 +136,11 @@ module.exports = {
 			link: 'https://gen.xyz/',
 			image: '/IMG_8120.png',
 		},
+		{
+			name: 'Goliath Automation & Robotics',
+			link: 'https://automationroboticsarduino.com/',
+			image: '/IMG_8121.png',
+		},
 	],
 	additionalSupport: [
 		{

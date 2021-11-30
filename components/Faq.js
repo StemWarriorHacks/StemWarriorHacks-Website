@@ -18,7 +18,7 @@ export const Faq = () => {
 		<div
 			id='faqs'
 			data-aos='slide-up'
-			className='overflow-x-hidden h-3/4 flex flex-col justify-center items-center rounded-lg my-10 px-4 md:px-10 md:px-4 py-10'>
+			className='overflow-x-hidden overflow-y-hidden h-3/4 flex flex-col justify-center items-center rounded-lg my-10 px-4 md:px-10 md:px-4 py-10'>
 			<p
 				className='text-4xl font-bold mb-4 mt-2'
 				style={{
