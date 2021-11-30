@@ -45,12 +45,17 @@ const Sponsors = () => {
 								width: '250px',
 								height: '200px',
 							}}>
-							<Image
-								src={sponsor.image}
-								alt={sponsor.name}
-								layout='fill'
-								objectFit='contain'
-							/>
+							<span className='has-tooltip'>
+								<span className='tooltip bg-yellow-200 p-3 -mt-1 lg:-mt-8 rounded'>
+									{sponsor.name}
+								</span>
+								<Image
+									src={sponsor.image}
+									alt={sponsor.name}
+									layout='fill'
+									objectFit='contain'
+								/>
+							</span>
 						</a>
 					))}
 				</div>
