@@ -12,7 +12,7 @@ const Sponsors = () => {
 			data-aos='slide-up'
 			className={`glass ${
 				state && 'dark'
-			} overflow-x-hidden flex flex-col justify-center items-center my-6 rounded-lg md:border-2 md:border-gray-200 md:dark:border md:dark:border-gray-500`}>
+			} overflow-x-hidden flex flex-col justify-center items-center my-6 rounded-lg md:border-2 md:border-gray-200 md:dark:border md:dark:border-gray-500 px-2 md:px-8 py-10`}>
 			<p
 				className='text-4xl text-center font-bold my-6'
 				style={{
@@ -45,17 +45,12 @@ const Sponsors = () => {
 								width: '250px',
 								height: '200px',
 							}}>
-							<span className='has-tooltip'>
-								<span className='tooltip bg-yellow-200 p-3 -mt-1 lg:-mt-8 rounded'>
-									{sponsor.name}
-								</span>
-								<Image
-									src={sponsor.image}
-									alt={sponsor.name}
-									layout='fill'
-									objectFit='contain'
-								/>
-							</span>
+							<Image
+								src={sponsor.image}
+								alt={sponsor.name}
+								layout='fill'
+								objectFit='contain'
+							/>
 						</a>
 					))}
 				</div>
