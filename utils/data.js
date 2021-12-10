@@ -141,6 +141,11 @@ module.exports = {
 			link: 'https://automationroboticsarduino.com/',
 			image: '/IMG_8121.png',
 		},
+		{
+			name: 'Give My Certificate',
+			link: 'https://givemycertificate.com/',
+			image: '/IMG_8122.png',
+		},
 	],
 	additionalSupport: [
 		{
