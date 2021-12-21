@@ -161,6 +161,11 @@ module.exports = {
 			link: 'https://www.echo3d.co/',
 			image: '/IMG_8124.png',
 		},
+                {
+			name: 'Symbl.ai',
+			link: 'https://symbl.ai/',
+			image: '/IMG_8125.png',
+		},
 	],
 	additionalSupport: [
 		{
