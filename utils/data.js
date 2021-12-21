@@ -1,14 +1,15 @@
 module.exports = {
 	name: 'StemWarrior Hacks',
 	title:
-		'StemWarrior Hacks – An international, student-run, 501(c)(3) non-profit hackathon aiming to inspire young innovators.',
+		'StemWarrior Hacks — An international, student-run, 501(c)(3) non-profit hackathon aiming to inspire young innovators.',
 	description:
 		'Register today and open your eyes to the depths, diversity, and power of computer science!',
-	date: 'December 24, 2021',
+	date: 'December 31, 2021',
 	url: 'https://www.stemwarriorhacks.org/',
 	twitter: '@HacksStem',
 	img: 'https://www.stemwarriorhacks.org/logo.png',
 	urls: {
+		googleForm: 'https://forms.gle/uT2dZPCxiz8v4dVWA',
 		twitter: 'https://twitter.com/HacksStem',
 		instagram: 'https://www.instagram.com/stem_warrior_hacks',
 		email: 'mailto:contact@stemwarriorhacks.org',
@@ -41,8 +42,8 @@ module.exports = {
 		'@context': 'http://schema.org/',
 		'@type': 'Event',
 		name: 'StemWarrior Hacks',
-		startDate: '2021-12-24T12:00',
-		endDate: '2021-12-26T12:00',
+		startDate: '2021-12-31T12:00',
+		endDate: '2022-01-02T12:00',
 		description:
 			'Register today and open your eyes to the depths, diversity, and power of computer science!',
 		isAccessibleForFree: true,
@@ -61,8 +62,8 @@ module.exports = {
 			price: '0',
 			priceCurrency: 'USD',
 			availability: 'https://schema.org/InStock',
-			validFrom: '2021-12-24',
-			validThrough: '2021-12-26',
+			validFrom: '2021-12-31',
+			validThrough: '2021-01-02',
 		},
 		performer: {
 			'@type': 'PerformingGroup',
@@ -94,7 +95,11 @@ module.exports = {
 			image: '/best.png',
 		},
 	],
-	leaders: [{ name: '', pronouns: '', contact: '' }],
+	leaders: [
+		{ name: 'Saaketh Shanbhogue', pronouns: 'he/him', discord: '' },
+		{ name: 'Kirtirajsinh Parmar', pronouns: 'he/him', discord: '' },
+		{ name: 'Giridhar Talla', pronouns: 'he/him', discord: '' },
+	],
 	sponsors: [
 		{
 			name: 'Slingshot',
@@ -145,6 +150,16 @@ module.exports = {
 			name: 'Give My Certificate',
 			link: 'https://givemycertificate.com/',
 			image: '/IMG_8122.png',
+		},
+		{
+			name: 'Centered',
+			link: 'https://www.centered.app/',
+			image: '/IMG_8123.png',
+		},
+		{
+			name: 'Echo 3D',
+			link: 'https://www.echo3d.co/',
+			image: '/IMG_8124.png',
 		},
 	],
 	additionalSupport: [

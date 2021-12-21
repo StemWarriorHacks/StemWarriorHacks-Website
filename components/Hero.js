@@ -14,9 +14,9 @@ const Hero = () => {
 				<p
 					data-aos='slide-up'
 					className='text-2xl font-semibold md:text-3xl mb-4'>
-					December 24th - 26th, 2021
+					Dec 31st, 2021 - Jan 2nd, 2022
 				</p>
-				<div className='flex flex-col md:flex-row justify-center md:justify-between items-center w-4/5 xl:w-3/6'>
+				<div className='flex flex-col md:flex-row justify-center md:justify-between items-center w-4/5 xl:w-5/6'>
 					<a href={urls.devpost}>
 						<button
 							data-aos='slide-up'
@@ -31,6 +31,14 @@ const Hero = () => {
 							aria-label='join discord'
 							className='px-6 py-2 my-2 md:my-6 w-56 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
 							Join our Discord
+						</button>
+					</a>
+					<a href={urls.googleForm} target='_blank' rel='noopener noreferrer'>
+						<button
+							data-aos='slide-up'
+							aria-label='google form'
+							className='px-6 py-2 my-2 md:my-6 w-56 bg-primary text-dark text-lg font-bold rounded-lg hover:ring-4 hover:ring-primary hover:ring-opacity-50'>
+							Register Now!
 						</button>
 					</a>
 				</div>
