@@ -1,6 +1,12 @@
-import Image from 'next/image'
+import { useContext } from 'react'
+import { leaders } from '../utils/data'
+import { StateContext } from '../utils/StateContext'
+import Member from './Member'
 
 const Team = () => {
+	const { state } = useContext(StateContext)
+	console.log(leaders)
+
 	return (
 		<div
 			id='team'
@@ -13,32 +19,12 @@ const Team = () => {
 				style={{
 					boxShadow: 'inset 0 -.400em 0 0 rgba(255,190,0, 0.4)',
 				}}>
-				Team
+				Our Team
 			</p>
-			<div className='flex flex-col md:w-10/12 justify-center items-center'>
-				<div className='relative grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center my-4 mx-auto w-full'>
-					{team.map((member) => (
-						<a
-							href={member.link}
-							target='_blank'
-							className='mx-auto'
-							rel='noopener noreferrer'
-							key={member.name}
-							data-aos='zoom-in'
-							style={{
-								position: 'relative',
-								width: '250px',
-								height: '200px',
-							}}>
-							<Image
-								src={member.image}
-								alt={member.name}
-								layout='fill'
-								objectFit='contain'
-							/>
-						</a>
-					))}
-				</div>
+			<div className='mt-6 grid gap-6 mb-8 sm:grid-cols-2'>
+				{leaders.map((leader) => (
+					<Member key={leader.name} {...leader} />
+				))}
 			</div>
 		</div>
 	)

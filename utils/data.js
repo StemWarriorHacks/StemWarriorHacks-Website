@@ -96,9 +96,20 @@ module.exports = {
 		},
 	],
 	leaders: [
-		{ name: 'Saaketh Shanbhogue', pronouns: 'he/him', discord: '' },
-		{ name: 'Kirtirajsinh Parmar', pronouns: 'he/him', discord: '' },
-		{ name: 'Giridhar Talla', pronouns: 'he/him', discord: '' },
+		{ name: 'Saaketh Shanbhogue', pronouns: 'he/him', role: 'Lead Organizer' },
+		{ name: 'Mudit Marawaha', pronouns: 'he/him', role: 'Outreach Lead' },
+		{ name: 'Giridhar Talla', pronouns: 'he/him', role: 'Technical Lead' },
+		{
+			name: 'Jennifer Chiou',
+			pronouns: 'she/her',
+			role: 'Sponsorship Manager',
+		},
+		{ name: 'Sarah Dufays', pronouns: 'she/her', role: 'Sponsorship Manager' },
+		{
+			name: 'Kirtirajsinh Parmar',
+			pronouns: 'he/him',
+			role: 'Technical Assistant',
+		},
 	],
 	sponsors: [
 		{

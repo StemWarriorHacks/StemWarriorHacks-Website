@@ -1,7 +1,7 @@
-import dynamic from 'next/dynamic'
-import Image from 'next/image'
 import { useContext, useEffect } from 'react'
 import AOS from 'aos'
+import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import About from '../components/About'
 import Schedule from '../components/Schedule'
 import Faq from '../components/Faq'
@@ -9,29 +9,18 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Sponsors from '../components/Sponsors'
 import Tracks from '../components/Tracks'
+import Team from '../components/Team'
 import { StateContext } from '../utils/StateContext'
 
 const Blobs = dynamic(import('../utils/Blobs'), { ssr: false })
 const Background = dynamic(import('../utils/Background'), { ssr: false })
 const NightBg = dynamic(import('../utils/NightBg'), { ssr: false })
-// const Snow = dynamic(import('../utils/Snow'), { ssr: false })
-// const Forest = dynamic(import('../utils/Forest'), { ssr: false })
 
 const Home = () => {
 	const { state, setState } = useContext(StateContext)
 	useEffect(() => {
 		AOS.init({ duration: 500 })
 	}, [])
-	// const theme = state ? 'dark' : 'light'
-	// localStorage.setItem('theme', theme)
-
-	// if (
-	// 	localStorage.getItem(theme) === 'dark' ||
-	// 	(!('theme' in localStorage) &&
-	// 		window.matchMedia('(prefers-color-scheme: dark)').matches)
-	// ) {
-	// 	setState(false)
-	// }
 
 	return (
 		<div className={state ? 'dark' : ''}>
@@ -46,6 +35,7 @@ const Home = () => {
 				<About />
 				<Tracks />
 				<Schedule />
+				<Team />
 				<Sponsors />
 				<Faq />
 			</div>
