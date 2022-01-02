@@ -172,12 +172,12 @@ module.exports = {
 			link: 'https://www.echo3d.co/',
 			image: '/IMG_8124.png',
 		},
-{
+		{
 			name: 'Symbl.ai',
 			link: 'https://symbl.ai/',
 			image: '/IMG_8125.png',
 		},
-{
+		{
 			name: '1Password',
 			link: 'https://1password.com/',
 			image: '/IMG_8126.png',
@@ -200,18 +200,14 @@ module.exports = {
 	],
 	schedule: [
 		{
-			date: 'Fri, December 24',
+			date: 'Fri, December 31',
 			events: [
-				{
-					time: '9:00 AM',
-					name: 'Beginning of Day 1',
-				},
 				{
 					time: '4:00 PM',
 					name: 'Opening Ceremony',
 				},
 				{
-					time: '6:30 PM',
+					time: '6:00 PM',
 					name: 'Game Night',
 				},
 				{
@@ -221,31 +217,27 @@ module.exports = {
 			],
 		},
 		{
-			date: 'Sat, December 25',
+			date: 'Sat, January 1',
 			events: [
 				{
 					time: '9:00 AM',
 					name: 'Beginning of Day 2',
 				},
 				{
-					time: ' 10:00 AM ',
-					name: 'How to get project ideas?',
+					time: ' 11:00 AM ',
+					name: 'Web Dev Workshop',
 				},
 				{
-					time: '12:00 AM',
-					name: 'EchoAr',
+					time: '12:00 PM',
+					name: 'Web Dev with C#/ASP.NET/Blazor',
 				},
 				{
-					time: '1:00 PM',
-					name: 'Intro to JavaScript',
-				},
-				{
-					time: '3:00 PM',
-					name: 'Begineers C++ ',
+					time: '2:00 PM',
+					name: 'Data Science Workshop',
 				},
 				{
 					time: '7:00 PM',
-					name: 'Intro to Figma',
+					name: 'PyGame Workshop',
 				},
 				{
 					time: '8:00 PM',
@@ -254,26 +246,22 @@ module.exports = {
 			],
 		},
 		{
-			date: 'Sun, December 26',
+			date: 'Sun, January 2',
 			events: [
 				{
-					time: '9:00 AM',
+					time: '8:00 AM',
 					name: 'Beginning of Day 3',
 				},
 				{
-					time: '10:00 AM',
-					name: 'EconHacks Workshop',
+					time: '8:30 AM',
+					name: 'How to Get Internships?',
 				},
 				{
-					time: '2:00 PM',
-					name: 'Guest Speaker',
+					time: '9:30 AM',
+					name: 'Python for Noobs Workshop',
 				},
 				{
-					time: '4:00 PM',
-					name: 'Discord Bots with JavaScript',
-				},
-				{
-					time: '12:00 AM',
+					time: '11:59 AM',
 					name: 'End of Day 3, and Submission Deadline',
 				},
 			],
